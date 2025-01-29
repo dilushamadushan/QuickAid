@@ -1,0 +1,11 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    flex: 1;
+}
+
+.conFoo{
+    background: linear-gradient(to bottom, #12013f, #010005);
+}
