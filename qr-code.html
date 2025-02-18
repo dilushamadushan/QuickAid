@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Assets/js/header-footer-active.js"></script>
+    <script src="Assets/js/header-footer.js"></script>
+    <link rel="stylesheet" href="Assets/css/qr-code.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container py-4">
+        <div class="text-center mb-4">
+            <h2>Generate a QR Code</h2>
+        </div>
+        <div class="sec">
+            <div class="container qr-container shadow-lg text-center ">
+                <input type="text" id="qeText" class="form-control mb-3" placeholder="Text or URL">
+                <div id="imgBox" class="mx-auto">
+                    <img src="" alt="QR Code" id="qrImage">
+                </div>
+                <button class="btn btn-success w-100" onclick="generatQrCode()">Generate QR Code</button>
+                <button class="btn btn-success w-100 mt-2 d-none" id="downloadBtn" onclick="downloadQrCode()">Download</button>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="Assets/js/qr-code.js"></script>
+</body>
+</html>
